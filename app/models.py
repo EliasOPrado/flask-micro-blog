@@ -3,6 +3,7 @@
 from datetime import datetime
 from app import db
 
+#user db
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
@@ -12,7 +13,7 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User {}>'.format(self.username)
-
+#post db
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
