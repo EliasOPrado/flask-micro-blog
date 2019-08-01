@@ -1,14 +1,23 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+# Flask Micro-blog project
 
+## tasks that need to be fixed:
 
-Hi there! Welcome to AWS Cloud9!
-
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
+- Section 5: Forms
+  - Needs to be well tied with other pages.
+  
+  errors that needs to be fixed:
+  
+  ```
+[2019-08-01 18:01:57,203] ERROR in app: Exception on /login [GET]
+Traceback (most recent call last):
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "c:\program files\python37\lib\site-packages\flask\app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [01/Aug/2019 18:01:57] "GET /login HTTP/1.1" 500 -
+  ```
